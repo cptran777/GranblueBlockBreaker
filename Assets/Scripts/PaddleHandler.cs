@@ -37,7 +37,7 @@ public class PaddleHandler : MonoBehaviour {
 
         // Helps us keep the paddle from being able to go too far off the screen to the right
         Vector3 topRightCameraPosition = mainCamera.ScreenToWorldPoint(new Vector3(mainCamera.pixelWidth, mainCamera.pixelHeight));
-        float maxXValue = topRightCameraPosition.x;
+        float maxXValue = topRightCameraPosition.x - 1.5f;
 
         transform.position = new Vector2(
             Mathf.Clamp(currentPosition + deltaMovement, 0, maxXValue), 

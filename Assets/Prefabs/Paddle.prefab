@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7916110989165469066}
   m_LocalRotation: {x: -0, y: -0, z: 0.42261827, w: 0.9063079}
-  m_LocalPosition: {x: 0.6640301, y: -4.25196, z: 8564.005}
+  m_LocalPosition: {x: 0.6640301, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7916110989447037744}
@@ -91,6 +91,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7916110989447037744}
   - component: {fileID: 7230253320599298434}
+  - component: {fileID: 995603016}
   m_Layer: 0
   m_Name: Paddle
   m_TagString: Untagged
@@ -122,7 +123,7 @@ PolygonCollider2D:
   m_GameObject: {fileID: 7916110989447037759}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: bee4e0c2feaac44cea0ae1fed0948595, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -138,11 +139,24 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.7994766, y: -3.8898134}
-      - {x: -0.72794724, y: -4.617982}
-      - {x: -0.60637665, y: -4.9923186}
-      - {x: 2.335474, y: -4.9365416}
-      - {x: 2.3640833, y: -4.171763}
-      - {x: 1.8063087, y: -3.9486542}
-      - {x: -0.071528435, y: -3.9486537}
-      - {x: -0.6107092, y: -3.744137}
+    - - {x: -0.68650913, y: 0.43423414}
+      - {x: -0.8638773, y: 0.012681246}
+      - {x: -0.13648129, y: -0.7750424}
+      - {x: 2.335474, y: -0.31826735}
+      - {x: 2.3392534, y: 0.09889889}
+      - {x: 1.6392746, y: 0.37166643}
+      - {x: 0.19600582, y: 0.37166667}
+      - {x: -0.12469864, y: 0.5743193}
+--- !u!114 &995603016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7916110989447037759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16dc3b27938bb4b77ade5f67ea840f8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementMultiplier: 15
